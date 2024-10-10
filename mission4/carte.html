@@ -6,6 +6,157 @@
     <title>Document</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Visite Numérique</title>
+    <style>
+        /* Style global de la page */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        /* Style de la carte */
+        .business-card {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;  /* Aligne les éléments en colonne */
+            justify-content: space-between; /* Espace entre les éléments */
+        }
+
+        /* Effet au survol de la carte */
+        .business-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Titre : Nom complet */
+        .business-card h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Sous-titre : Titre de poste */
+        .business-card h2 {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        /* Description de la personne */
+        .business-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Liste des icônes des réseaux sociaux */
+        .social-links {
+            display:flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+         /* Style pour le lien "Retour au sommaire" */
+         .return-link {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            margin-top:auto; /* Pousse le lien vers le bas */
+        }
+
+        .return-link a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        /* Effet au survol pour le lien "Retour au sommaire" */
+        .return-link a:hover {
+            color: #45a049;
+            text-decoration: underline;
+        }
+
+
+        /* Style des icônes de réseaux sociaux */
+        .social-links a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        /* Effet de survol pour les icônes de réseaux sociaux */
+        .social-links a:hover {
+            color: #4CAF50;
+        }
+
+        /* Style responsive */
+        @media (max-width: 600px) {
+            .business-card {
+                width: 90%;
+            }
+
+            .business-card h1 {
+                font-size: 20px;
+            }
+
+            .business-card h2 {
+                font-size: 16px;
+            }
+
+            .business-card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Carte de visite numérique -->
+    <div class="business-card">
+        <h1>Accène Roy</h1>
+        <h2>Développeur Web</h2>
+        <p>Passionné par le développement web, je conçois des sites dynamiques et modernes avec une attention particulière à l'expérience utilisateur et à la performance.</p>
+        
+        <!-- Liens vers les réseaux sociaux -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa fa-linkedin">Linkedin</i>
+            </a>
+            <a href="https://github.com" target="_blank">
+                <i class="fa fa-github">Github</i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fa fa-twitter">Twitter</i>
+            </a>
+        </div>
+    </div>
+
+    <div class="return-link">
+        <a href="index.html">Retour au sommaire</a>
+    </div>
+
+</body>
+</html>
     
 </body>
 </html>
