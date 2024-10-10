@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Configuration de base pour body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        /* En-tête du formulaire */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        /* Container du formulaire : centré avec marges auto pour alignement vertical */
+        form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+        }
+
+        /* Style des labels et inputs dans le tableau */
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        /* Style des champs de texte */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"],
+        input[type="range"],
+        input[type="color"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Ajouter de l'espace entre les éléments */
+        tr + tr {
+            margin-top: 10px;
+        }
+
+        /* Style du bouton Valider */
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Effet de survol (hover) pour le bouton Valider */
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style pour les checkboxes et radios pour meilleure visibilité */
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Style pour les liens */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Lien retour au sommaire - effet au survol */
+        a:hover {
+            color: #45a049;
+            text-decoration: underline;
+        }
+
+        /* Responsiveness: ajuster la taille du formulaire sur petits écrans */
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="number"],
+            input[type="date"],
+            input[type="file"],
+            input[type="range"],
+            input[type="color"],
+            textarea,
+            select {
+                font-size: 16px;
+            }
+
+            input[type="button"] {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        /* Garder le lien en bas de la page */
+        footer {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+
+    <form action=""><table>
+        <tr>
+            <td><label >Pseudo</label></td>
+            <td><input type="text" placeholder="Pseudo" maxlength="10"></td>
+        </tr>
+        <tr>
+            <td><label >Mot de passe</label></td>
+            <td><input type="password"placeholder="Mot de Passe" maxlength="13" ></td>
+        </tr>
+        <tr>
+            <td><label >Prénom</label></td>
+            <td><input type="name" placeholder="Prénom" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td><label >Email</label></td>
+            <td><input type="mail" placeholder="email@email.com" maxlenght="20"></td>
+        </tr>
+        <tr>
+            <td><label >Photo</label></td>
+            <td><input type="file" ></td>
+        </tr>
+        <tr>
+            <td><label >Pays</label></td>
+            <td><select>
+                <option>Algérie</option>
+                <option>Haïti</option>
+                </select>
+                </td>
+        </tr>
+        <tr>
+            <td><label >Quels sont vos fruits préférés ?</label></td>
+            <td>Banane<input type="checkbox">Fraise<input type="checkbox">Poire<input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label >Civilité</label></td>
+            <td>Homme<input type="radio">Femme<input type="radio"></td>
+        </tr>
+        <tr>
+            <td><label >Ville</label></td>
+            <td><input type="text" placeholder="Ville" maxlenght="20"></td>
+        </tr>
+        <tr>
+            <td><label >Code Postal</label></td>
+            <td><input type="number" placeholder="Code Postal" maxlenght="20"></td>
+        </tr>
+        <tr>
+            <td><label >Adresse</label></td>
+            <td><textarea rows="5" cols="50" placeholder="Votre adresse ici" maxlenght="100"></textarea></td>
+        </tr>
+        <tr>
+            <td><label >Date de naissance</label></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><label >Jauge</label></td>
+            <td><input type="range"></td>
+        </tr>
+        <tr>
+            <td><label>Téléphone</label></td>
+            <td><input type="text" placeholder="Téléphone" maxlenght="20"></td>
+        </tr>
+        <tr>
+            <td><label >Recherche</label></td>
+            <td><input type="text" placeholder="Recherche" maxlenght="20"></td>
+        </tr>
+        <tr>
+            <td><label >URL</label></td>
+            <td><input type="text" placeholder="URL" maxlenght="20"></td>
+        </tr>
+        <tr>
+            <td><label >Couleur</label></td>
+            <td><input type="color"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Valider"></td>
+        </tr>       
+    </table>
+    </form>
+    <a href="index.html">Retour au sommaire</a>
+    
+</body>
+</html>
