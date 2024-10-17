@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5; /* Couleur de fond douce */
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #006400; /* Un beau vert foncé pour le titre */
+    font-size: 2em;
+}
+
+button {
+    background-color: #32CD32; /* Vert clair */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #228B22; /* Vert plus foncé au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+button:active {
+    transform: scale(0.95); /* Réduit légèrement la taille lors du clic */
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.back-home {
+    background-color: #32CD32; /* Même couleur que les boutons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #228B22; /* Vert plus foncé au survol */
+    transform: scale(1.05);
+}
