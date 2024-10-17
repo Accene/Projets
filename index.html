@@ -2,19 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viexport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Arial', sans-serif; /* Police plus sérieuse et moderne */
+            color: #333; /* Couleur du texte en gris foncé pour plus de sobriété */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fond gris clair */
+        }
+
+        /* Barre de menu */
+        .navbar {
+            background-color: #ffffff; /* Fond clair pour la barre de navigation */
+            padding: 15px;
+            color: #333; /* Couleur du texte de la barre */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: #333; /* Couleur sombre pour les liens */
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #2196F3; /* Couleur bleue au survol */
+        }
+
+        /* Contenu principal */
+        .content {
+            padding: 40px;
+            text-align: center;
+            background-color: #ffffff; /* Fond clair pour la section de présentation */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce pour la présentation */
+            border-radius: 8px; /* Coins légèrement arrondis */
+            margin: 20px; /* Marge autour de la section */
+        }
+
+        .avatar {
+            font-size: 100px;
+            color: #666;
+        }
+
+        .presentation {
+            margin-top: 20px;
+        }
+
+        .presentation h1 {
+            font-size: 36px;
+            color: #333; /* Titre en gris foncé */
+        }
+
+        .presentation p {
+            font-size: 18px;
+            color: #555; /* Texte gris clair */
+        }
+
+        /* Section des missions */
+        .missions-section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .missions-section h2 {
+            color: #333; /* Titre de section en gris foncé */
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* Conteneur des missions */
+        .missions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px; /* Espace entre les blocs */
+        }
+
+        .mission {
+            background-color: #f9f9f9; /* Fond léger pour les blocs */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd; /* Bordure légère pour les blocs */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .mission:hover {
+            background-color: #e0e0e0; /* Couleur de survol pour les blocs */
+            transform: translateY(-5px);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Hérite de la couleur du conteneur */
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>ROY Accène</h1>
-    <h1>Sommaire</h1><br>
-    <a href="">Tp1</a> <br>
-    <a href="mission1/index.html">Mission1</a> <br>
-    <a href="tp2/index.html">Tp2 </a> <br>
-    <a href="mission2/index.html">Mission2</a> <br>
-    <a href="mission3/index.html">Mes Certifications</a> <br>
-    <a href="mission4/index.html">Mission 4</a> <br>
-    <a href="tp1_JS/index.html">Tp1 JS</a>  
+    <!-- Barre de navigation en haut -->
+    <nav class="navbar">
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#certifications">Mes Certifications</a></li>
+        </ul>
+    </nav>
 
+    <!-- Contenu principal avec avatar et présentation -->
+    <div class="content">
+        <div class="avatar">
+            &#128100; <!-- Icône d'avatar représentant un utilisateur -->
+        </div>
+        <div class="presentation">
+            <h1>ROY Accène</h1>
+            <p>Élève en BTS SIO à Ingetis Paris, option SISR</p>
+        </div>
+    </div>
+
+    <!-- Section des missions -->
+    <div class="missions-section" id="projects">
+        <h2>Mes Projets</h2>
+        <div class="missions">
+            <div class="mission">
+                <a href="tp1/index.html">Tp1</a>
+            </div>
+            <div class="mission">
+                <a href="mission1/index.html">Mission 1</a>
+            </div>
+            <div class="mission">
+                <a href="tp2/index.html">Tp2</a>
+            </div>
+            <div class="mission">
+                <a href="mission2/index.html">Mission 2</a>
+            </div>
+            <div class="mission">
+                <a href="mission3/index.html">Mes Certifications</a>
+            </div>
+            <div class="mission">
+                <a href="mission4/index.html">Mission 4</a>
+            </div>
+            <div class="mission">
+                <a href="tp1_JS/index.html">Tp1 JS</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
