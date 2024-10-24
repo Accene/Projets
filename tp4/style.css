@@ -1,0 +1,94 @@
+/* Body configuration */
+body {
+    background-color: #004D98; /* Fond bleu */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header */
+.header {
+    background-color: #A50044;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Container to hold the blocks */
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between the blocks */
+    align-items: stretch; /* Align items to stretch the same height */
+    width: 100%; /* Full width for the container */
+    padding: 10px; /* Optional padding for aesthetics */
+}
+
+/* Blocks configuration */
+.block1, .block2, .block3 {
+    flex: 1; /* Makes all blocks take equal space */
+    padding: 20px;
+    margin: 0 10px; /* Horizontal margin for spacing */
+    background-color: #A50044; /* Background color for blocks */
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    justify-content: flex-start; /* Align to the start */
+}
+
+/* Title styles */
+.titre {
+    background-color: #004D98; /* Blue background for titles */
+    padding: 5px;
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-bottom: 10px; /* Spacing below titles */
+}
+
+/* Additional title styles */
+.titre1 h2, .titre2 h2, .titre3 h2 {
+    margin: 0; /* No margin for titles */
+    color: white; /* Title text color */
+    font-size: 20px; /* Title size */
+}
+
+/* Image block */
+.block3 {
+    display: flex;
+    flex-direction: column; /* Ensure the image is below the title */
+    align-items: center; /* Center the image */
+}
+
+/* Image centering */
+.block3 img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/* Footer with the link */
+.footer {
+    background-color: #A50044;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
