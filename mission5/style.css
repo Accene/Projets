@@ -1,0 +1,112 @@
+h3{
+    color:#84C2BC;
+}
+
+h5{
+    color:#84C2BC;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.main-container {
+    width: 50%; /* Ajustez la largeur si nécessaire */ /* Bordure identique aux autres divs */
+    padding: 10px; /* Espace intérieur */
+    margin: 0 auto; /* Centrer la div */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+header{
+    width: 90%;
+    height: 200px;
+    clear:both; 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.infos{
+    
+    width: 50%; 
+    height: 150px;
+    float:left;
+    margin-top: 2%;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+
+img{
+    margin-top: 10%;
+
+}
+
+.photo{
+    
+    width: 30%; 
+    height: 150px;
+    float:right;
+    margin-top: 2%;
+}
+
+.container{
+    width: 90%;
+    height: 200px;
+    clear: both;
+    padding: 10px;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+.date{
+    width:  15%;
+    height: 150px;
+    
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.info{
+    width:  80%;
+    height: 150px;
+    float: right;
+}
+
+footer{
+    width: 90%;
+    height: 200px;
+    clear: both;
+    padding: 10px;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+.année{
+    width:  15%;
+    height: 150px;
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.bob{
+    width:  80%;
+    height: 150px;
+
+    float: right;
+    
+}
+
+h5 {
+    margin: 5px 0; 
+    font-size: 1em;
+}

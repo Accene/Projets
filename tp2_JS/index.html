@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice en JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Calculatrice en JS</h1>
+        
+        <div>
+            <input class="t" placeholder="Premier chiffre" type="number" name="t1" id="t1">
+            <input class="t" placeholder="Deuxième chiffre" type="number" name="t2" id="t2">
+        </div>
+        
+        <br><br>
+        
+        <div>
+            <button onclick="addition()">+</button>
+            <button onclick="soustraction()">-</button>
+            <button onclick="division()">/</button>
+            <button onclick="multiplication()">*</button>
+        </div>
+        
+        <br><br>
+        
+        <div>
+            <button onclick="parite()">Parité</button>
+            <button onclick="permute()">Permute</button>
+        </div>
+        
+        <br><br>
+        
+        <div>
+            <input class="t34" placeholder="Résultat" type="text" name="t3" id="t3" readonly>
+            <input class="t34" placeholder="Pair ou impair" type="text" name="parite" id="parite" readonly>
+        </div>
+    </center>
+
+    <script>
+        function addition() {
+            const t1 = parseFloat(document.getElementById('t1').value);
+            const t2 = parseFloat(document.getElementById('t2').value);
+            document.getElementById('t3').value = t1 + t2;
+        }
+
+        function soustraction() {
+            const t1 = parseFloat(document.getElementById('t1').value);
+            const t2 = parseFloat(document.getElementById('t2').value);
+            document.getElementById('t3').value = t1 - t2;
+        }
+
+        function division() {
+            const t1 = parseFloat(document.getElementById('t1').value);
+            const t2 = parseFloat(document.getElementById('t2').value);
+            document.getElementById('t3').value = t1 / t2;
+        }
+
+        function multiplication() {
+            const t1 = parseFloat(document.getElementById('t1').value);
+            const t2 = parseFloat(document.getElementById('t2').value);
+            document.getElementById('t3').value = t1 * t2;
+        }
+
+        function parite() {
+            const t1 = parseFloat(document.getElementById('t1').value);
+            const result = (t1 % 2 === 0) ? "Pair" : "Impair";
+            document.getElementById('parite').value = result;
+        }
+
+        function permute() {
+            let t1 = document.getElementById('t1').value;
+            let t2 = document.getElementById('t2').value;
+            document.getElementById('t1').value = t2;
+            document.getElementById('t2').value = t1;
+        }
+    </script>
+</body>
+</html>
