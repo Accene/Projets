@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.styled-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.return-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.styled-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Empêcher le changement de couleur après un clic */
+.styled-button a {
+    color: white;  /* Garde la couleur blanche */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+.styled-button a:visited {
+    color: white; /* Empêche le changement de couleur après clic */
+}
+
+.styled-button a:hover {
+    color: white; /* Garde la couleur blanche au survol */
+}
+
+.styled-button a:active {
+    color: white; /* Garde la couleur blanche quand on clique */
+}
+
+

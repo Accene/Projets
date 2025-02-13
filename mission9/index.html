@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quizz JavaScript</h1>
+        <p>Répondez aux 10 questions et évaluez vos connaissances.</p>
+    </header>
+
+    <main>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Quel est le type de `null` en JavaScript ?</p>
+                <label><input type="radio" name="q1" value="1"> Object</label>
+                <label><input type="radio" name="q1" value="0"> Undefined</label>
+                <label><input type="radio" name="q1" value="0"> Number</label>
+            </div>
+
+            <div class="question">
+                <p>2. Quelle méthode permet d’ajouter un élément à la fin d’un tableau en JS ?</p>
+                <label><input type="radio" name="q2" value="1"> push()</label>
+                <label><input type="radio" name="q2" value="0"> unshift()</label>
+                <label><input type="radio" name="q2" value="0"> pop()</label>
+            </div>
+
+            <div class="question">
+                <p>3. Quelle méthode permet de convertir une chaîne en majuscules ?</p>
+                <label><input type="radio" name="q3" value="1"> toUpperCase()</label>
+                <label><input type="radio" name="q3" value="0"> toLowerCase()</label>
+                <label><input type="radio" name="q3" value="0"> split()</label>
+            </div>
+
+            <div class="question">
+                <p>4. Comment déclarer une variable constante en JavaScript ?</p>
+                <label><input type="radio" name="q4" value="1"> const</label>
+                <label><input type="radio" name="q4" value="0"> let</label>
+                <label><input type="radio" name="q4" value="0"> var</label>
+            </div>
+
+            <div class="question">
+                <p>5. Que retourne `typeof NaN` en JavaScript ?</p>
+                <label><input type="radio" name="q5" value="1"> Number</label>
+                <label><input type="radio" name="q5" value="0"> Undefined</label>
+                <label><input type="radio" name="q5" value="0"> Object</label>
+            </div>
+
+            <div class="question">
+                <p>6. Comment afficher "Hello World" dans la console ?</p>
+                <label><input type="radio" name="q6" value="1"> console.log("Hello World")</label>
+                <label><input type="radio" name="q6" value="0"> alert("Hello World")</label>
+                <label><input type="radio" name="q6" value="0"> print("Hello World")</label>
+            </div>
+
+            <div class="question">
+                <p>7. Quelle boucle est utilisée pour parcourir un tableau en JS ?</p>
+                <label><input type="radio" name="q7" value="1"> forEach</label>
+                <label><input type="radio" name="q7" value="0"> while</label>
+                <label><input type="radio" name="q7" value="0"> do-while</label>
+            </div>
+
+            <div class="question">
+                <p>8. Quel mot-clé permet de retourner une valeur dans une fonction ?</p>
+                <label><input type="radio" name="q8" value="1"> return</label>
+                <label><input type="radio" name="q8" value="0"> break</label>
+                <label><input type="radio" name="q8" value="0"> continue</label>
+            </div>
+
+            <div class="question">
+                <p>9. Quel opérateur est utilisé pour vérifier l’égalité stricte ?</p>
+                <label><input type="radio" name="q9" value="1"> ===</label>
+                <label><input type="radio" name="q9" value="0"> ==</label>
+                <label><input type="radio" name="q9" value="0"> =</label>
+            </div>
+
+            <div class="question">
+                <p>10. Comment écrire un commentaire sur une ligne en JS ?</p>
+                <label><input type="radio" name="q10" value="1"> // commentaire</label>
+                <label><input type="radio" name="q10" value="0"> /* commentaire */</label>
+                <label><input type="radio" name="q10" value="0"> # commentaire</label>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="check-answers" class="styled-button">Correction</button>
+                <button type="button" id="show-correction" class="styled-button">Corrigé</button>
+                <button type="reset" class="styled-button">Effacer</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="return-home">
+        <a href="../index.html" class="styled-button">Retour à l'accueil</a>
+    </div>
+    
+
+    <p id="score"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

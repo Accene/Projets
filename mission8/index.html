@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme d'exercices JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plateforme d'Exercices JavaScript</h1>
+        <p>Testez vos connaissances en JavaScript en résolvant ces exercices !</p>
+    </header>
+
+    <main>
+        <section id="exercises-list">
+            <h2>Exercices Disponibles</h2>
+            <ul id="exercise-container"></ul>
+        </section>
+
+        <section id="exercise-details" style="display:none;">
+            <h2 id="exercise-title"></h2>
+            <p id="exercise-description"></p>
+            <textarea id="user-code" placeholder="Écrivez votre fonction ici..."></textarea>
+            <button id="run-code" class="styled-button">Vérifier</button>
+            <p id="exercise-result"></p>
+            <button id="show-solution" class="styled-button">Voir la solution</button>
+            <pre id="solution-code" style="display:none;"></pre>
+        </section>
+        <button id="return-home" class="styled-button"><a href="../index.html">Retour à l'accueil</a></button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

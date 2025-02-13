@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Module de Facturation</h1>
+    </header>
+
+    <main>
+        <table id="facture">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ligne">
+                    <td><input type="text" class="desc"></td>
+                    <td><input type="number" class="qte" min="1" value="1"></td>
+                    <td><input type="number" class="prix" min="1" value="1"></td>
+                    <td class="total">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="ajouter-ligne" class="styled-button">Ajouter une ligne</button>
+        <button id="remplir-auto" class="styled-button">Remplir automatiquement</button>
+
+        <div class="calculs">
+            <label>Remise (%) : <input type="number" id="remise" min="0" value="0"></label>
+            <label>Taxe (%) : <input type="number" id="taxe" min="0" value="20"></label>
+            <label>Frais d’expédition (€) : <input type="number" id="frais" min="0" value="5"></label>
+        </div>
+
+        <button id="calculer" class="styled-button">Calculer</button>
+
+        <div class="resultats">
+            <p>Sous-total : <span id="sous-total">0</span> €</p>
+            <p>Total après remise : <span id="remise-total">0</span> €</p>
+            <p>Taxe totale : <span id="taxe-total">0</span> €</p>
+            <p>Solde final : <span id="solde">0</span> €</p>
+        </div>
+    </main>
+
+    <div class="return-home">
+        <a href="../index.html" class="styled-button">Retour à l'accueil</a>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

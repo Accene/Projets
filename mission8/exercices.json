@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "titre": "Addition de deux nombres",
+    "description": "Écrivez une fonction addition(a, b) qui retourne la somme de a et b.",
+    "solution": "function addition(a, b) { return a + b; }",
+    "test": [3, 5]
+  },
+  {
+    "id": 2,
+    "titre": "Trouver le maximum",
+    "description": "Écrivez une fonction max(a, b) qui retourne le plus grand des deux nombres.",
+    "solution": "function max(a, b) { return a > b ? a : b; }",
+    "test": [7, 10]
+  },
+  {
+    "id": 3,
+    "titre": "Vérifier un nombre pair",
+    "description": "Écrivez une fonction estPair(n) qui retourne true si n est pair, sinon false.",
+    "solution": "function estPair(n) { return n % 2 === 0; }",
+    "test": [4]
+  },
+  {
+    "id": 4,
+    "titre": "Factorielle d'un nombre",
+    "description": "Écrivez une fonction factorielle(n) qui retourne la factorielle de n.",
+    "solution": "function factorielle(n) { return n <= 1 ? 1 : n * factorielle(n - 1); }",
+    "test": [5]
+  },
+  {
+    "id": 5,
+    "titre": "Inverser une chaîne",
+    "description": "Écrivez une fonction inverser(chaine) qui retourne la chaîne inversée.",
+    "solution": "function inverser(chaine) { return chaine.split('').reverse().join(''); }",
+    "test": ["javascript"]
+  },
+  {
+    "id": 6,
+    "titre": "Vérifier un palindrome",
+    "description": "Écrivez une fonction estPalindrome(mot) qui retourne true si le mot est un palindrome.",
+    "solution": "function estPalindrome(mot) { return mot === mot.split('').reverse().join(''); }",
+    "test": ["radar"]
+  },
+  {
+    "id": 7,
+    "titre": "Somme des chiffres",
+    "description": "Écrivez une fonction sommeChiffres(n) qui retourne la somme des chiffres d’un nombre.",
+    "solution": "function sommeChiffres(n) { return n.toString().split('').reduce((a, b) => a + parseInt(b), 0); }",
+    "test": [123]
+  },
+  {
+    "id": 8,
+    "titre": "Table de multiplication",
+    "description": "Écrivez une fonction tableMultiplication(n) qui retourne la table de multiplication de n.",
+    "solution": "function tableMultiplication(n) { let res = []; for (let i = 1; i <= 10; i++) res.push(`${n} x ${i} = ${n * i}`); return res.join('\\n'); }",
+    "test": [3]
+  }
+]
